@@ -1,0 +1,54 @@
+:root {
+    --base-100: #76787D;
+    --base-200: #333333;
+    --base-300: #000000;
+    --base-main: #e31f24;
+    --base-border: #E0E0E0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  scroll-padding-top: 5rem;
+  height: 100vh;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.dotty-loading::after {
+  display: inline-block;
+  animation: dotty steps(1, end) 1s infinite;
+  content: "";
+}
+
+@keyframes dotty {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
