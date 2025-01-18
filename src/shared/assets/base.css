@@ -1,9 +1,9 @@
 :root {
-    --base-100: #76787D;
-    --base-200: #333333;
-    --base-300: #000000;
-    --base-main: #e31f24;
-    --base-border: #E0E0E0;
+  --base-100: #76787d;
+  --base-200: #333333;
+  --base-300: #000000;
+  --base-main: #e31f24;
+  --base-border: #e0e0e0;
 }
 
 html {

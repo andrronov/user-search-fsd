@@ -1,10 +1,9 @@
 <script setup lang="ts">
+import { Text } from "@/shared/ui";
 </script>
 
 <template>
-    <input />
+  <Text size="md"> Поиск сотрудников </Text>
 </template>
 
-<style>
-
-</style>
+<style></style>

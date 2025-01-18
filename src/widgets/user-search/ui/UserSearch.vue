@@ -8,6 +8,4 @@ import { Results } from "@/feature/results";
   <Results />
 </template>
 
-<style>
-
-</style>
+<style></style>

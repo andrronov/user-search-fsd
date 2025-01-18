@@ -13,16 +13,16 @@
 
 <style lang="scss">
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px #0000001A;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px #0000001a;
 
-    .grid__sidebar{
-      display: flex;
-      flex-direction: column;
-      border-right: 1px solid var(--base-border);
-    }
+  .grid__sidebar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--base-border);
+  }
 }
 </style>

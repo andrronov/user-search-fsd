@@ -8,7 +8,7 @@ const route = useRoute();
 useSeoMeta({
   ogTitle: "Жилфонд",
   ogType: "website",
-})
+});
 </script>
 
 <template>
