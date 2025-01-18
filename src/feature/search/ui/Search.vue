@@ -1,9 +1,19 @@
 <script setup lang="ts">
-import { Text } from "@/shared/ui";
+import { Input } from "@/shared/ui";
 </script>
 
 <template>
-  <Text size="md"> Поиск сотрудников </Text>
+  <div class="search__container">
+    <span class="text__primary"> Поиск сотрудников </span>
+    <Input placeholder="Antonette, Bret" />
+  </div>
 </template>
 
-<style></style>
+<style scoped lang="scss">
+.search__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+</style>

@@ -4,8 +4,18 @@ import { Results } from "@/feature/results";
 </script>
 
 <template>
-  <Search />
-  <Results />
+  <div class="sidebar__container">
+    <Search />
+    <Results />
+  </div>
 </template>
 
-<style></style>
+<style scoped lang="scss">
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 29px;
+  padding: 27px 31px 27px 20px;
+}
+</style>

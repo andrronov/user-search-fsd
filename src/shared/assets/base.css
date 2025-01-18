@@ -6,9 +6,26 @@
   --base-border: #e0e0e0;
 }
 
+.text__primary {
+  color: var(--base-200);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35rem;
+}
+.text__secondary {
+  color: var(--base-100);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.05rem;
+}
+.text__main {
+  color: var(--base-main);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.45rem;
+}
+
 html {
-  margin: 0;
-  padding: 0;
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -17,6 +34,16 @@ html {
   overflow-y: scroll;
   scroll-padding-top: 5rem;
   height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
 }
 
 .fade-enter-active,

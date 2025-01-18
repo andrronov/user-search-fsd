@@ -20,8 +20,6 @@
   box-shadow: 0px 0px 10px #0000001a;
 
   .grid__sidebar {
-    display: flex;
-    flex-direction: column;
     border-right: 1px solid var(--base-border);
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1 class="header__logo_name">Жилфонд</h1>
+    <h1 class="text__main">Жилфонд</h1>
     <span class="header__user">Пользователь</span>
   </header>
 </template>
@@ -14,12 +14,6 @@
   width: 100%;
   margin-bottom: 26px;
 
-  .header__logo_name {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.4rem;
-    color: var(--base-main);
-  }
   .header__user {
     font-size: 1rem;
     font-weight: 400;

@@ -1,7 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { UserCard } from "@/entities/user";
+</script>
 
 <template>
-  <div></div>
+  <div class="results__container">
+    <span class="text__primary"> Результаты </span>
+    <UserCard />
+  </div>
 </template>
 
-<style></style>
+<style scoped lang="scss">
+.results__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+</style>
