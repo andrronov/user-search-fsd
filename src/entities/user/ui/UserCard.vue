@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Image } from "@/shared/ui";
+</script>
 
 <template>
   <div class="card__container">
-    <img src="/empty-photo.png" />
+    <Image />
     <div class="card__info">
       <span class="text__primary">Antonette</span>
       <span class="text__secondary">@Bret.com</span>

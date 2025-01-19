@@ -10,14 +10,6 @@ const routes = [
     },
     component: () => import("@/pages/home/Page.vue"),
   },
-  {
-    path: "/user/:id",
-    name: "user",
-    meta: {
-      layout: "default",
-    },
-    component: () => {},
-  },
 ];
 
 const router = createRouter({

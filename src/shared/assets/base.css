@@ -33,7 +33,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
   scroll-padding-top: 5rem;
-  height: 100vh;
 }
 
 * {

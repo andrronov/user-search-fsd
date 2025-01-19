@@ -4,7 +4,9 @@ import { Input } from "@/shared/ui";
 
 <template>
   <div class="search__container">
-    <span class="text__primary"> Поиск сотрудников </span>
+    <span class="text__primary">
+      <slot name="title"> Поиск сотрудников </slot>
+    </span>
     <Input placeholder="Antonette, Bret" />
   </div>
 </template>

@@ -1,10 +1,17 @@
 <script setup lang="ts">
-import { PageWrapper } from "@/widgets/page";
+import { PageWrapper } from "@/entities/page";
+import { UserSearch } from "@/widgets/user-search";
+import { UserInfo } from "@/widgets/user-info";
 </script>
 <template>
-  <div>
-    <p>User Info</p>
-  </div>
+  <PageWrapper>
+    <template #sidebar>
+      <UserSearch />
+    </template>
+    <template #main>
+      <UserInfo />
+    </template>
+  </PageWrapper>
 </template>
 
-<style></style>
+<style scoped lang="scss"></style>

@@ -6,7 +6,7 @@
       <slot name="sidebar"></slot>
     </aside>
     <main class="grid__content">
-      <slot name="userInfo"></slot>
+      <slot name="main"></slot>
     </main>
   </div>
 </template>
