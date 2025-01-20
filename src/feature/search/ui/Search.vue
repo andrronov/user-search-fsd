@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useUserStore } from "@/shared/stores/users";
 import { Input } from "@/shared/ui";
-import { ref, watch } from "vue";
+import { watch } from "vue";
 
 const input = defineModel<string | number | undefined>({
   default: "",

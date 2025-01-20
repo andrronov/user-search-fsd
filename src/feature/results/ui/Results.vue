@@ -15,7 +15,7 @@ const selectUser = (user: UserInfo) => {
   userStore.setUser(user);
 };
 
-const checkUser = (id): boolean => {
+const checkUser = (id: number): boolean => {
   if (!userStore.selectedUser) {
     return false;
   }

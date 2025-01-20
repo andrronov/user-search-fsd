@@ -27,6 +27,7 @@ export default [
       "sort-imports": "off",
 
       "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-implicit-any": "off",
       "@typescript-eslint/ban-ts-comment": "off",
 
       "import-x/no-self-import": "error",
