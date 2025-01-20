@@ -3,6 +3,7 @@ import { watchThrottled } from "@vueuse/core";
 import { computed, ref } from "vue";
 import { Search } from "@/feature/search";
 import { Results } from "@/feature/results";
+import { ErrorState } from "@/entities/page";
 import { createAsyncProcess } from "@/shared/lib/utils/async";
 import { isNumber, fstLetterUppercase } from "@/shared/lib/utils/common";
 import { api } from "@/shared/api";
@@ -59,6 +60,7 @@ watchThrottled(
   <div class="sidebar__container">
     <Search v-model="search" />
     <Results :users="foundUsers" :loading />
+    <ErrorState v-if="error" />
   </div>
 </template>
 
