@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAttrs } from "vue";
+
 withDefaults(
   defineProps<{
     placeholder: string;
@@ -10,14 +12,24 @@ withDefaults(
   },
 );
 
-const modelValue = defineModel<string>({
+const modelValue = defineModel<string | number | undefined>({
   default: "",
 });
+
+const attrs = useAttrs();
+
+const handleInput = (e: InputEvent | Event) => {
+  const targetValue = (e.target as HTMLInputElement).value;
+
+  modelValue.value =
+    attrs.type === "number" ? Number(targetValue) : targetValue;
+};
 </script>
 
 <template>
   <input
     :value="modelValue"
+    @input="handleInput"
     :placeholder="placeholder"
     :disabled="disabled"
     type="text"

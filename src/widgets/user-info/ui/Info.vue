@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { Image } from "@/shared/ui";
+import type { UserInfo } from "@/shared/types";
+
+defineProps<{
+  user: UserInfo;
+}>();
 </script>
 
 <template>
@@ -7,23 +12,21 @@ import { Image } from "@/shared/ui";
     <Image class="info__image" />
     <div class="text__container">
       <div class="info__main">
-        <p class="text__primary">Ervin Howell</p>
+        <p class="text__primary">{{ user.name }}</p>
         <p class="text__secondary">
           <span class="text__primary"> email: </span>
-          Shanna@melissa.tv
+          {{ user.email }}
         </p>
         <p class="text__secondary">
           <span class="text__primary"> phone: </span>
-          010-692-6593 x09125
+          {{ user.phone }}
         </p>
       </div>
       <div class="info__about">
         <p class="text__primary">О себе:</p>
         <p class="text__secondary">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam velit
-          iure, illum commodi assumenda necessitatibus saepe odio, asperiores
-          reprehenderit quidem facere aspernatur dignissimos soluta ex. A quidem
-          non laborum! Temporibus!
+          Работает в компании {{ user.company.name }}, живёт по адресу
+          {{ user.address.street }}. Личный сайт: {{ user.website }}
         </p>
       </div>
     </div>
@@ -44,7 +47,7 @@ import { Image } from "@/shared/ui";
     width: 100%;
     max-width: 420px;
     height: 286px;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   .text__container {
