@@ -13,5 +13,5 @@ export default defineConfig({
       "@": resolve("./src"),
     },
   },
-  base: "/user-search-fsd"
+  base: "/user-search-fsd/"
 });
